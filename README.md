@@ -7,6 +7,12 @@ Being a PWA, this application has following characteristics:
 2. Has an App Icon
 3. App is installable
 
+## Install necessary packages
+To install all the necessary packages, run the following command
+
+```
+npm install
+```
 
 To test the offline worker locally, we need to build the application (This is because the service worker is only enabled in the Production environment as enabling it in Development environment may produce undesired results while testing due to cached assets).
 
