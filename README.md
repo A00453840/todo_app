@@ -1,16 +1,26 @@
-# React PWA 
+# React PWA - Assignment
 
-You can check the full documentation [here](https://create-react-app.dev/docs/making-a-progressive-web-app/)
+This is To-Do - A React Progressive Web Application, Developed as a part of MCDA-5550 course.
 
-## Create React App
-To install a PWA react app with [`create-react-app`](https://create-react-app.dev/docs/getting-started) run the following command:
-```
-npx create-react-app my-app --template cra-template-pwa
-```
-This will generate a react app that is PWA-ready!
+Being a PWA, this application has following characteristics:
+1. Can be used offline
+2. Has an App Icon
+3. App is installable
 
-## Start the app
-To start the app run:
+
+To test the offline worker locally, we need to build the application (This is because the service worker is only enabled in the Production environment as enabling it in Development environment may produce undesired results while testing due to cached assets).
+
+## Building the application
+To build the application, run the following command
+
 ```
-npm run start
+npm run build
+```
+This will create a build which can be found in ./build folder.
+
+## Deploy the app locally
+To serve the app with a static server run:
+
+```
+serve -s build
 ```
